@@ -61,7 +61,7 @@ echo "[*] #7 Suppression du conteneur de base de données..."
 docker rm -f demo-db
 
 echo "[*] #7 Recréation du conteneur de base avec le même volume..."
-MSYS_NO_PATHCONV=1 docker run -d \
+docker run -d \
   --name demo-db \
   --network demo-net \
   -v demo_pgdata:/var/lib/postgresql/data \
@@ -85,7 +85,7 @@ echo ""
 echo "[*] Nettoyage final des conteneurs et du réseau..."
 docker rm -f demo-db demo-api
 docker network rm demo-net
-docker volume rm demo_pgdata
+# docker volume rm demo_pgdata
 echo ""
 
 echo "Terminé !"

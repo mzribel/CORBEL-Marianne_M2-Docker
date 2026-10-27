@@ -1,2 +1,3 @@
 # avoiding a replacement by CRLF in the script if user is on Windows (smh)
 *.sh text eol=lf 
+*.txt text eol=lf 

@@ -73,3 +73,11 @@ api : répond sur le port 8080
 --- Vérifications terminées ! ---
 ```
 
+### Commentaires sur la gestion des mots de passe 
+
+Le mot de passe de la base se trouve uniquement dans demo-api/secrets/db_password.txt (ignoré par Git). Compose le monte en lecture seule dans /run/secrets/db_password pour db et api.
+
+`db` le lit via POSTGRES_PASSWORD_FILE.
+`api` le charge dans PGPASSWORD au démarrage (entrypoint), sans modification du code.
+
+Il n'apparaît pas dans docker inspect.

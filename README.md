@@ -56,11 +56,11 @@ demo-api-db-1        postgres:16-alpine   "docker-entrypoint.s…"   db        7
  ✔ Network demo-api_demo_front     Removed 0.5s
  ✔ Network demo-api_demo_back      Removed 0.2s
 [+] Running 5/5
- ✔ Network demo-api_demo_back    Created                                                                                                                                                                                                                                  0.0s
- ✔ Network demo-api_demo_front   Created                                                                                                                                                                                                                                  0.0s
- ✔ Container demo-api-db-1       Healthy                                                                                                                                                                                                                                  5.9s
- ✔ Container demo-api-api-1      Started                                                                                                                                                                                                                                  6.1s
- ✔ Container demo-api-adminer-1  Started                                                                                                                                                                                                                                  0.6s
+ ✔ Network demo-api_demo_back      Created 0.0s
+ ✔ Network demo-api_demo_front     Created 0.0s
+ ✔ Container demo-api-db-1         Healthy 5.9s
+ ✔ Container demo-api-api-1        Started 6.1s
+ ✔ Container demo-api-adminer-1    Started 0.6s
 db : healthy
 api : répond sur le port 8080
 [

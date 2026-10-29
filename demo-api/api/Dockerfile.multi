@@ -1,9 +1,6 @@
 # syntax=docker/dockerfile:1
 
-# ARG NODE_IMAGE=node:26.13-alpine3.23
-
-# Régression volontaire
-ARG NODE_IMAGE=node:22-alpine
+ARG NODE_IMAGE=node:26.13-alpine3.23
 
 # Étape 1 : Installation des dépendances (deps)
 FROM ${NODE_IMAGE} AS deps

@@ -2,6 +2,9 @@
 
 ARG NODE_IMAGE=node:26.13-alpine3.23
 
+# Régression volontaire
+# ARG NODE_IMAGE=node:22.11-alpine
+
 # Étape 1 : Installation des dépendances (deps)
 FROM ${NODE_IMAGE} AS deps
 WORKDIR /app
